@@ -1,0 +1,57 @@
+:root {
+    --secondaryColor: #e69f0c;
+    --textColor: #333;
+    --transColor: #fff;
+}
+
+.helpBox{
+    width: 100%;
+    height: 100vh;
+}
+
+.helpBox small{
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+}
+
+.helpBox .cardBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.helpBox .cardBox{
+
+}
+
+.helpBox h1{
+    color: black;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 560px;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .helpBox{
+        padding: 20px;
+        height: 100vh;
+    }
+
+    .helpBox .cardBox{
+  grid-template-columns: 1fr;
+    }
+
+    .helpBox h1{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        text-align: start;
+    }
+}

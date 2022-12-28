@@ -1,0 +1,101 @@
+.introSection{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../Images/cha2.jpg"), linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.65));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.innerText{
+    background: rgba(0, 0, 0, 0.62);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center
+}
+
+.innerText span{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.innerText span h1{
+    color: var(--transColor);
+    font-size: 5rem;
+    width: 500px;
+    display: flex;
+    font-weight: 500;
+    margin: 0;
+    flex-direction: column;
+    text-align: start;
+    align-self: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.innerText span p{
+    color: #a1a0a0;
+    font-size: 15px;
+    width: 40%;
+    display: flex;
+    font-weight: 500;
+    margin: 0;
+    flex-direction: column;
+    text-align: start;
+    align-self: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.innerText span label{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.innerText span label span{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    border: 0.5px solid var(--secondaryColor);
+    text-align: center!important;
+}
+
+.innerText span label span h5{
+   color: var(--transColor);
+    font-size: 20px;
+    text-align: center!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .introSection{
+        height: 100%;
+    }
+    .innerText{
+        padding: 30px 0;
+    }
+    .innerText span{
+        padding: 20px;
+    }
+    .innerText span h1{
+        font-size: 30px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .innerText span p{
+        width: 100%;
+    }
+
+    .innerText span label{
+        grid-template-columns: 1fr;
+    }
+}

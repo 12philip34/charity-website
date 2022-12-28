@@ -1,0 +1,99 @@
+:root {
+    --secondaryColor: #e69f0c;
+    --textColor: #333;
+    --transColor: #fff;
+}
+
+.helpBox{
+    width: 100%;
+    height: 100vh;
+}
+
+.helpBox small{
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+}
+
+.helpBox .cardBox .card {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    margin: 20px;
+}
+
+.helpBox .cardBox .card:hover {
+    border: 1px solid var(--secondaryColor);
+}
+
+.helpBox .cardBox .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.cardBox .card .cardBody p{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.cardBox .card .cardBody label {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBox .card .cardBody label span{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cardBox .card .cardBody label span:nth-child(1),
+.cardBox .card .cardBody label span:nth-child(2){
+ border-right: 1px solid var(--secondaryColor);
+}
+
+@media only screen and (max-width: 768px) {
+    .cardBox .card .cardBody label span:nth-child(1),
+    .cardBox .card .cardBody label span:nth-child(2){
+        border: none;
+    }
+    .helpBox {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .helpBox .cardBox {
+        /*padding: 10px;*/
+    }
+    .helpBox .cardBox .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cardBox .card .cardBody{
+        height: 100%;
+    }
+    .cardBox .card .cardBody label{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .cardBox .card .cardBody label span{
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .cardBox .card .cardBody label{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+     .helpBox .cardBox .card{
+        margin: 100px 0;
+    }
+}
