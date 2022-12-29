@@ -5,6 +5,7 @@ import "./style.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Logo from '../../Images/A-removebg-preview.png'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const navRef = useRef();
@@ -22,13 +23,13 @@ const Navbar = () => {
             <header>
                 <h3 data-aos="fade-right" data-aos-easing="linear"
                     data-aos-duration="1500"><img src={Logo} alt="Logo.image"/></h3>
-                <nav ref={navRef}>
-                    <a href="/" onClick={showNavbar} className="linkUnderline"  data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Home</a>
-                    <a href="/whoweare" onClick={showNavbar} className="linkUnderline" data-aos="fade-left" data-aos-duration="1500">Donation</a>
-                    <a href="/whatwedo" onClick={showNavbar} className="linkUnderline" data-aos="fade-right" data-aos-duration="1500">Events</a>
-                    <a href="/appointment" onClick={showNavbar} className="linkUnderline" data-aos="fade-right" data-aos-duration="1500">Blog</a>
-                    <a href="/contactpage" onClick={showNavbar} className="linkUnderline" data-aos="fade-right" data-aos-duration="1500">About</a>
-                    <a href="/contactpage" onClick={showNavbar} className="linkUnderline" data-aos="fade-right" data-aos-duration="1500">Contact</a>
+                <nav ref={navRef} data-aos="fade-right" data-aos-duration="1500">
+                    <NavLink to="/" exact onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Home</NavLink>
+                    <NavLink to="/donation" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Donation</NavLink>
+                    <NavLink to="/event" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Events</NavLink>
+                    <NavLink to="/blog" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Blog</NavLink>
+                    <NavLink to="/about" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>About</NavLink>
+                    <NavLink to="/contact" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Contact</NavLink>
                     <button
                         className="nav-btn nav-close-btn"
                         onClick={showNavbar}>

@@ -42,13 +42,13 @@ header h3 img{
     width: 100px;
 }
 
-nav a {
+nav #links {
     margin: 0 1rem;
     color: var(--textColor);
     text-decoration: none;
 }
 
-nav a:hover {
+nav #links:hover {
     color: var(--secondaryColor);
 }
 
@@ -116,6 +116,9 @@ nav {
     color: #305ec1;
     padding:5px;
 }
+.active{
+    color:var(--secondaryColor);
+}
 
 .dropItem:hover{
     color: #8e99ce;
@@ -164,14 +167,14 @@ nav {
         right: 2rem;
     }
 
-    nav a {
+    nav #links {
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-self: center;
     }
 
-    nav a:hover{
+    nav #links:hover{
         color: var(--transColor);
     }
 
