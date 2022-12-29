@@ -4,32 +4,19 @@
     --transColor: #fff;
 }
 
-.helpBox{
+.importantBox{
     width: 100%;
+    text-align: center;
     padding: 30px;
 }
 
-.helpBox small{
+.importantBox small{
     color: var(--secondaryColor);
     text-transform: capitalize;
 }
 
-.helpBox .cardBox{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-    height: auto;
-}
 
-.helpBox .cardBox{
-
-}
-
-.helpBox h1{
+.importantBox h1{
     color: black;
     text-transform: capitalize;
     font-size: 3rem;
@@ -40,38 +27,63 @@
     line-height: 50px;
 }
 
+.importantBox .importantText{
+    font-size: 15px;
+    color: #a19b9b;
+    width: 500px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.cardContainer{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
 @media only screen and (max-width: 768px) {
-    .helpBox{
-        padding: 20px;
-        height: auto;
+    .importantBox{
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
 
-    .helpBox .cardBox{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        height: auto;
-        padding: 10px;
-        margin: 30px 0;
-    }
 
-    .helpBox h1{
+    .importantBox h1{
         width: 100%;
         font-size: 30px;
         display: flex;
         flex-direction: column;
         align-self: flex-start;
         text-align: start;
+        padding: 20px;
     }
+
+    .importantBox .importantText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        text-align: start;
+        padding: 20px;
+    }
+
 }
+
 
 @media only screen and (max-width: 1026px) {
 
-    .helpBox .cardBox{
+    .cardContainer{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         height: auto;
         padding: 10px;
         margin: 30px 0;
     }
-
 }
+
+

@@ -1,82 +1,56 @@
-
-.body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    background: #e8eff7;
+:root {
+    --secondaryColor: #e69f0c;
+    --textColor: #333;
+    --transColor: #fff;
 }
-.grid-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+
+.cardContainer .card{
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    position: relative;
     margin: 20px 0;
 }
-.card-top img {
-    width: 100%;
-}
-.container {
-    width: 95%;
-    margin: auto;
-}
-.card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
-}
-.card-top {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
-}
-.card-info h2 {
-    font-size: 18px;
-    margin: 10px 0 5px 0;
-}
-.date {
-    margin-bottom: 10px;
-}
-span,p {
-    font-size: 15px;
-    display: block;
-}
-.excerpt {
-    color: #aeaeae;
-}
-.flex-row {
-    display: flex;
+
+.iconBox{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    width: 15%;
+    height: 60px;
     align-items: center;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: -1px;
+    background: #ffffff;
 }
-.card-bottom {
-    margin-top: 20px;
+.card h3{}
+.card p{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
-.button {
-    text-decoration: unset;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #4e4e4e;
-    width: 80px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 30px;
-    border-radius: 5px;
-    background: #f2f4f6;
+.card button{}
+
+.card:hover{
+    border: 1px solid var(--secondaryColor);
+    background: #fcfafa;
 }
-.read-more {
-    text-decoration: unset;
-    color: #000;
-    font-weight: 600;
-}
-.btn-yellow {
-    background: #ffb91d;
-}
-.btn-sky {
-    background: #d2f9fe;
-}
-.btn-dpink {
-    background: #e8d3fc;
+
+
+
+@media only screen and (max-width: 768px) {
+    .cardContainer .card{
+        margin: 10px;
+    }
+
+    .card p{
+        width: 100%;
+    }
 }

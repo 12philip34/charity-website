@@ -1,0 +1,150 @@
+:root {
+    --secondaryColor: #e69f0c;
+    --textColor: #333;
+    --transColor: #fff;
+}
+
+.joinUs{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.joinUs small{
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+}
+
+
+.joinUs h1{
+    color: black;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 560px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.joinUsImageBox {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.joinUsImageBox img{
+    width: 60%;
+}
+.joinUsInfoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 10px 20px #e7e5e5;
+    padding: 20px;
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.joinUsInfoBox h1{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.joinUsInfoBox label{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.joinUsInfoBox label input{
+    outline: none;
+    border: 1px solid #efdaae;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.joinBtn{
+    font-weight: 600;
+    width: 70%;
+    background: #ff9900;
+    font-size: 20px;
+}
+
+.joinUsInfoBox span{
+    width: 100px;
+    height: 60px;
+    background: #000;
+    position: absolute;
+}
+
+.spanOne{
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 20px;
+}
+
+.spanTwo{
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .joinUs h1{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        text-align: start;
+    }
+    .joinUsInfoBox label{
+        grid-template-columns: 1fr;
+
+    }
+
+    .joinUsImageBox img{
+        width: 100%;
+    }
+    .joinUsInfoBox{
+        width: 100%;
+        border: none;
+        padding: 30px 0;
+    }
+
+    .joinUsInfoBox span{
+        width: 70px;
+        height: 40px;
+        background: #000;
+        position: absolute;
+    }
+
+    .spanOne{
+        border-top-left-radius: 0;
+    }
+
+    .spanTwo{
+        border-bottom-right-radius: 0;
+    }
+
+    .joinBtn{
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .joinUsInfoBox label{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .joinUsInfoBox label input{
+        width: 80%;
+    }
+}
