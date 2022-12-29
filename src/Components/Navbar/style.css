@@ -32,8 +32,14 @@ header {
     z-index: 1000;
 }
 
+header h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 header h3 img{
-    width: 200px;
+    width: 100px;
 }
 
 nav a {
@@ -116,11 +122,20 @@ nav {
     background: #eeeeee;
 }
 
+@media only screen and (max-width: 768px) {
+    header h3 img{
+        width: 100px;
+        margin-top: 5px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     header .nav-btn {
         visibility: visible;
         opacity: 1;
     }
+
+
 
     header nav {
         position: fixed;

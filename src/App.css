@@ -26,6 +26,11 @@ button:hover{
   padding: 10px 50px;
   border-radius: 10px!important;
   border: 1px solid var(--secondaryColor);
+  cursor: pointer;
+}
+
+small{
+  margin: 10px 0;
 }
 
 button:hover a{

@@ -4,7 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import "./style.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Logo from '../../logo.svg'
+import Logo from '../../Images/A-removebg-preview.png'
 
 const Navbar = () => {
     const navRef = useRef();
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div>
             <header>
                 <h3 data-aos="fade-right" data-aos-easing="linear"
-                    data-aos-duration="1500"><img style={{width: '20%'}} src={Logo} alt="Logo.image"/></h3>
+                    data-aos-duration="1500"><img src={Logo} alt="Logo.image"/></h3>
                 <nav ref={navRef}>
                     <a href="/" onClick={showNavbar} className="linkUnderline"  data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Home</a>
                     <a href="/whoweare" onClick={showNavbar} className="linkUnderline" data-aos="fade-left" data-aos-duration="1500">Donation</a>

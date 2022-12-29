@@ -7,12 +7,18 @@ const JoinUs = () => {
     return (
         <div>
             <div className={style.joinUs}>
-                <small>Feature causes</small>
-                <h1>Be a volunteer of ours in the nearest location.</h1>
+                <small data-aos="fade-up"
+                       data-aos-duration="2000">Feature causes</small>
+                <h1 data-aos="fade-up"
+                    data-aos-duration="3000">Be a volunteer of ours in the nearest location.</h1>
             </div>
             <div className={style.joinUsImageBox}>
-                <img src={cha7} alt="volunteer.jpg"/>
-                <div className={style.joinUsInfoBox}>
+                <img data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" src={cha7} alt="volunteer.jpg"/>
+                <div data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" className={style.joinUsInfoBox}>
                     <span className={style.spanOne}></span>
                     <span className={style.spanTwo}></span>
                     <h1>please provide valid information</h1>

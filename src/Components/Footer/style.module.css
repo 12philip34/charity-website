@@ -1,0 +1,146 @@
+:root {
+    --secondaryColor: #e69f0c;
+    --textColor: #333;
+    --transColor: #fff;
+}
+
+
+
+
+
+.footerBox{
+    display: grid;
+    color: #3856c7;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    justify-content: center;
+    align-self: start;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 10px 1px 10px #eeeeee;
+    margin-top: 50px;
+}
+.columnOne img{
+    width: 100px;
+    margin-top: -30px;
+}
+
+.columnOne,
+.columnTwo,
+.columnThree,
+.columnFour,
+.columnFive{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    align-self: start;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.columnOne h1{
+    font-size: 1.2rem;
+    color: var(--secondaryColor);
+    margin-bottom: 10px;
+}
+
+.columnOne h5{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.columnOne span{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+
+.columnOne span i{
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnOne span i:hover{
+    cursor: pointer;
+    background: #e7e5e5;
+}
+
+.columnOne p,
+.columnTwo p,
+.columnThree p,
+.columnFour p,
+.columnFive p
+{
+    color: rgba(169, 169, 169, 0.73);
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.columnOne h2,
+.columnTwo h2,
+.columnThree h2,
+.columnFour h2,
+.columnFive h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.columnFive input{
+    outline: none;
+    border: 1px solid #efdaae;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.columnTwo p:hover,
+.columnThree p:hover,
+.columnFour p:hover
+{
+    color: #000000;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerBox{
+        background: var(--secondaryColor);
+    }
+    .columnOne img{
+        background: #ffffff;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    .columnOne h1{
+        color: #7c5808;
+    }
+
+    .columnOne p,
+    .columnTwo p,
+    .columnThree p,
+    .columnFour p,
+    .columnFive p
+    {
+        color: whitesmoke;
+        font-size: 14px;
+    }
+
+    .footerBtn{
+        border: 1px solid white;
+        color: white;
+    }
+    .footerBtn:hover{
+        color: #7c5808;
+    }
+
+}

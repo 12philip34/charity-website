@@ -7,7 +7,9 @@ const HelpProps = (props) => {
         <div>
             <section className={style.helpBox}>
                 <div className={style.cardBox}>
-                    <div className={style.card}>
+                    <div data-aos="fade-right"
+                         data-aos-offset="300"
+                         data-aos-easing="ease-in-sine" className={style.card}>
                         <img src={props.CardImage} alt=""/>
                         <div className={style.cardBody}>
                             <p>{props.Cardtext}</p>

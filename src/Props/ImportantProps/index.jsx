@@ -6,7 +6,9 @@ const ImportantProps = (props) => {
     return (
         <div>
             <section className={style.cardContainer}>
-                <div className={style.card}>
+                <div data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" className={style.card}>
                     <div className={style.iconBox}>{props.Icon}</div>
                     <h3>{props.Header}</h3>
                     <p>{props.Paragraph}</p>
