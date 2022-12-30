@@ -6,6 +6,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Logo from '../../Images/A-removebg-preview.png'
 import { NavLink } from 'react-router-dom'
+import HomeIcon from '@mui/icons-material/Home';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import EventRepeatIcon from '@mui/icons-material/EventRepeat';
+import BookIcon from '@mui/icons-material/Book';
+import GroupsIcon from '@mui/icons-material/Groups';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 const Navbar = () => {
     const navRef = useRef();
@@ -20,16 +26,16 @@ const Navbar = () => {
 
     return (
         <div>
-            <header>
+             <header>
                 <h3 data-aos="fade-right" data-aos-easing="linear"
                     data-aos-duration="1500"><img src={Logo} alt="Logo.image"/></h3>
                 <nav ref={navRef}>
-                    <NavLink to="/" exact onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Home</NavLink>
-                    <NavLink to="/donation" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Donation</NavLink>
-                    <NavLink to="/event" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Events</NavLink>
-                    <NavLink to="/blog" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Blog</NavLink>
-                    <NavLink to="/about" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>About</NavLink>
-                    <NavLink to="/contact" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Contact</NavLink>
+                    <NavLink to="/" exact onClick={showNavbar} className="linkUnderline active" id='links'><HomeIcon className='navIcon'/>Home</NavLink>
+                    <NavLink to="/donation" onClick={showNavbar} className="linkUnderline active" id='links'><VolunteerActivismIcon className='navIcon'/>Donation</NavLink>
+                    <NavLink to="/event" onClick={showNavbar} className="linkUnderline active" id='links'><EventRepeatIcon className='navIcon'/>Events</NavLink>
+                    <NavLink to="/blog" onClick={showNavbar} className="linkUnderline active" id='links'><BookIcon className='navIcon'/>Blog</NavLink>
+                    <NavLink to="/about" onClick={showNavbar} className="linkUnderline active" id='links'><GroupsIcon className='navIcon'/>About</NavLink>
+                    <NavLink to="/contact" onClick={showNavbar} className="linkUnderline active" id='links'><ContactPageIcon className='navIcon'/>Contact</NavLink>
                     <button
                         className="nav-btn nav-close-btn"
                         onClick={showNavbar}>

@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import logo from'../../Images/A-removebg-preview.png'
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const Footer = () => {
     const FaceBook ={
@@ -19,6 +19,11 @@ const Footer = () => {
     }
     const Youtube ={
         color: '#e00c44'
+    }
+
+    const FooterArrow ={
+        color: '#b67c05',
+        fontSize: '18px'
     }
 
     return (
@@ -47,28 +52,28 @@ const Footer = () => {
                  data-aos-offset="200"
                  data-aos-easing="ease-in-sine" className={style.columnTwo}>
                 <h2>menu</h2>
-                <a href='/'>home</a>
-                <a href='/donation'>donation</a>
-                <a href='/blog'>category</a>
-                <a href='/event'>feature</a>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='/'>home</a></h6>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='/donation'>donation</a></h6>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='/blog'>category</a></h6>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='/event'>feature</a></h6>
             </div>
             <div data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine" className={style.columnThree}>
                 <h2>category</h2>
-                <a href='#'>medical aid</a>
-                <a href='#'>quality education</a>
-                <a href='#'>healthy food</a>
-                <a href='#'>develop skills</a>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='#'>medical aid</a></h6>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='#'>quality education</a></h6>
+               <h6> <ArrowRightAltIcon style={FooterArrow} /><a href='#'>healthy food</a></h6>
+               <h6> <ArrowRightAltIcon style={FooterArrow} /><a href='#'>develop skills</a></h6>
             </div>
             <div data-aos="fade-right"
                  data-aos-offset="200"
                  data-aos-easing="ease-in-sine" className={style.columnFour}>
                 <h2>about us</h2>
-                <a href='#'>who we are</a>
-                <a href='#'>whats our mission</a>
-                <a href='#'>source of fund</a>
-                <a href='#'>testimonals</a>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='#'>who we are</a></h6>
+                <h6><ArrowRightAltIcon style={FooterArrow} /><a href='#'>whats our mission</a></h6>
+               <h6> <ArrowRightAltIcon style={FooterArrow} /><a href='#'>source of fund</a></h6>
+               <h6> <ArrowRightAltIcon style={FooterArrow} /><a href='#'>testimonals</a></h6>
             </div>
             <div data-aos="fade-right"
                  data-aos-offset="100"

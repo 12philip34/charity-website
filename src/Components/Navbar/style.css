@@ -12,7 +12,7 @@
 :root {
     --mainColor: #29335c;
     --mainColorLight: #5767aa;
-    --secondaryColor: #e69f0c;
+    --secondaryColor: rgba(0, 0, 0, 0.79);
     --textColor: #333;
     --transColor: #fff;
 }
@@ -42,11 +42,28 @@ header h3 img{
     width: 100px;
 }
 
+.navIcon{
+    visibility: hidden!important;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    background: #e7e5e5;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+nav #links:hover .navIcon {
+visibility: visible!important;
+}
+
 nav #links {
     margin: 0 1rem;
     color: var(--textColor);
     text-decoration: none;
+    display: flex;
+    position: relative;
 }
+
 
 nav #links:hover {
     color: var(--secondaryColor);
@@ -181,5 +198,9 @@ nav {
     .callText{
         color: #ffffff;
         border: 1px solid #7c5808;
+    }
+
+    .navIcon{
+        background: rgba(0, 0, 0, 0.64);
     }
 }
