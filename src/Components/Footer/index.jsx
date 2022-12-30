@@ -47,28 +47,28 @@ const Footer = () => {
                  data-aos-offset="200"
                  data-aos-easing="ease-in-sine" className={style.columnTwo}>
                 <h2>menu</h2>
-                <p>home</p>
-                <p>donation</p>
-                <p>category</p>
-                <p>feature</p>
+                <a href='/'>home</a>
+                <a href='/donation'>donation</a>
+                <a href='/blog'>category</a>
+                <a href='/event'>feature</a>
             </div>
             <div data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine" className={style.columnThree}>
                 <h2>category</h2>
-                <p>medical aid</p>
-                <p>quality education</p>
-                <p>healthy food</p>
-                <p>develop skills</p>
+                <a href='#'>medical aid</a>
+                <a href='#'>quality education</a>
+                <a href='#'>healthy food</a>
+                <a href='#'>develop skills</a>
             </div>
             <div data-aos="fade-right"
                  data-aos-offset="200"
                  data-aos-easing="ease-in-sine" className={style.columnFour}>
                 <h2>about us</h2>
-                <p>who we are</p>
-                <p>whats our mission</p>
-                <p>source of fund</p>
-                <p>testimonals</p>
+                <a href='#'>who we are</a>
+                <a href='#'>whats our mission</a>
+                <a href='#'>source of fund</a>
+                <a href='#'>testimonals</a>
             </div>
             <div data-aos="fade-right"
                  data-aos-offset="100"

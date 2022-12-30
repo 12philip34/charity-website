@@ -74,14 +74,22 @@
 }
 
 .columnOne p,
-.columnTwo p,
-.columnThree p,
-.columnFour p,
 .columnFive p
 {
     color: rgba(169, 169, 169, 0.73);
     font-size: 14px;
     transition: 0.5s;
+}
+
+
+.columnTwo a,
+.columnThree a,
+.columnFour a
+{
+    color: rgba(169, 169, 169, 0.73);
+    font-size: 14px;
+    transition: 0.5s;
+    text-decoration: none;
 }
 
 .columnOne h2,
@@ -102,9 +110,9 @@
 }
 
 
-.columnTwo p:hover,
-.columnThree p:hover,
-.columnFour p:hover
+.columnTwo a:hover,
+.columnThree a:hover,
+.columnFour a:hover
 {
     color: #000000;
     cursor: pointer;

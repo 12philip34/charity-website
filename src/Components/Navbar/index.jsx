@@ -23,7 +23,7 @@ const Navbar = () => {
             <header>
                 <h3 data-aos="fade-right" data-aos-easing="linear"
                     data-aos-duration="1500"><img src={Logo} alt="Logo.image"/></h3>
-                <nav ref={navRef} data-aos="fade-right" data-aos-duration="1500">
+                <nav ref={navRef}>
                     <NavLink to="/" exact onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Home</NavLink>
                     <NavLink to="/donation" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Donation</NavLink>
                     <NavLink to="/event" onClick={showNavbar} activeClassName="linkUnderline active" id='links'>Events</NavLink>
